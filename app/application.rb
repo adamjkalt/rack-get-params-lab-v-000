@@ -23,6 +23,10 @@ class Application
         resp.write "#{item}\n"
         end
       end
+    elsif req.path.match(/add/)
+      if condition
+        
+      end
     else
       resp.write "Path Not Found"
     end
