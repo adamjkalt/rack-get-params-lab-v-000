@@ -24,7 +24,7 @@ class Application
         end
       end
     elsif req.path.match(/add/)
-      if condition
+      if @@items.include? "#{{test}}"
       end
     else
       resp.write "Path Not Found"
