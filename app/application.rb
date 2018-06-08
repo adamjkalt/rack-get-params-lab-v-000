@@ -1,5 +1,5 @@
 class Application
-
+require "pry"
   @@items = ["Apples","Carrots","Pears"]
 
   @@cart = []
