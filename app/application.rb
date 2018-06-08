@@ -28,6 +28,7 @@ class Application
     elsif req.path.match(/add/)
       binding.pry
       if @@items.include? req.params["item"]
+        @@cart << req.params["item"]
       end
     else
       resp.write "Path Not Found"
