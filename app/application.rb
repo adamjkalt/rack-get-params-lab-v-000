@@ -25,7 +25,6 @@ class Application
       end
     elsif req.path.match(/add/)
       if condition
-        
       end
     else
       resp.write "Path Not Found"
