@@ -27,7 +27,7 @@ class Application
       end
     elsif req.path.match(/add/)
       binding.pry
-      if @@items.include? "apples"
+      if @@items.include? req.params["item"]
       end
     else
       resp.write "Path Not Found"
